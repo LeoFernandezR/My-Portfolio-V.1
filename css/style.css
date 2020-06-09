@@ -20,7 +20,45 @@ img {
   max-width: 100%;
 }
 main {
-  background-color: var(--charcoal);
+  background: rgba(65, 180, 180, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(65, 180, 180, 1) 0%,
+    rgba(127, 198, 164, 1) 50%,
+    rgba(65, 180, 180, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(65, 180, 180, 1)),
+    color-stop(50%, rgba(127, 198, 164, 1)),
+    color-stop(100%, rgba(65, 180, 180, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(65, 180, 180, 1) 0%,
+    rgba(127, 198, 164, 1) 50%,
+    rgba(65, 180, 180, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(65, 180, 180, 1) 0%,
+    rgba(127, 198, 164, 1) 50%,
+    rgba(65, 180, 180, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(65, 180, 180, 1) 0%,
+    rgba(127, 198, 164, 1) 50%,
+    rgba(65, 180, 180, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(65, 180, 180, 1) 0%,
+    rgba(127, 198, 164, 1) 50%,
+    rgba(65, 180, 180, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41b4b4', endColorstr='#41b4b4', GradientType=1 );
 }
 .container {
   width: 95%;
@@ -203,7 +241,7 @@ h2 {
 }
 /** FOOTER **/
 .social {
-  background-color: var(--verdigris);
+  background-color: var(--charcoal);
   padding: 2rem 0;
   text-align: center;
   display: flex;
