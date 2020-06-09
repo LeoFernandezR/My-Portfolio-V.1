@@ -53,6 +53,7 @@ h2 {
   margin: 0 auto;
   border-radius: 5px;
 }
+/** HEADER **/
 .container-video {
   max-width: 100%;
   overflow-x: hidden;
@@ -151,16 +152,7 @@ h2 {
   font-size: 2.4rem;
   color: var(--cosmic-latte);
 }
-.bar-nav {
-  display: flex;
-  justify-content: space-between;
-}
-.bar-nav a {
-  font-size: 2.4rem;
-  text-decoration: none;
-  margin-right: 3rem;
-  color: var(--cosmic-latte);
-}
+/** SKILLS **/
 .techs {
   display: flex;
   justify-content: space-between;
@@ -199,15 +191,17 @@ h2 {
 .edit-img {
   width: 18rem !important;
 }
+/* PROJECTS */
 .work {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
   padding-bottom: 4rem;
 }
-.work p {
-  font-size: 1.4rem;
+.project img {
+  border-radius: 10px;
 }
+/** FOOTER **/
 .social {
   background-color: var(--verdigris);
   padding: 2rem 0;
