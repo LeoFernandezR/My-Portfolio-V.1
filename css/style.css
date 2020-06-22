@@ -110,8 +110,16 @@ h2 {
   min-height: 100%;
 }
 @media (min-width: 768px) and (min-width: 992px) {
+  .container-video {
+    min-height: 100%;
+  }
   .container-video video {
     min-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .container-video {
+    min-height: 90rem;
   }
 }
 
@@ -128,13 +136,22 @@ h2 {
   height: 100%;
 }
 .header-nav {
-  margin: 0 auto;
-  width: 400px;
+  margin: 0 5rem;
   text-align: center;
 }
-@media (min-width: 768px) and (min-width: 992px) {
+@media (min-width: 768px) {
   .header-nav {
-    width: 500px;
+    margin: 0 20rem;
+  }
+}
+@media (min-width: 992px) {
+  .header-nav {
+    margin: 0 30rem;
+  }
+}
+@media (max-width: 480px) {
+  .header-nav {
+    margin: 0 3rem;
   }
 }
 .header-nav nav {
@@ -272,14 +289,30 @@ h2 {
     font-size: 2.8rem;
   }
 }
+@media (max-width: 480px) {
+  .navigation a {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+  }
+}
 .navigation a:hover {
   color: var(--verdigris);
 }
 .navigation a i {
-  font-size: 4rem;
+  font-size: 3rem;
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .navigation a i {
+    font-size: 3.6rem;
+  }
+}
+@media (max-width: 480px) {
+  .navigation a i {
+    font-size: 2.2rem;
+  }
 }
 .home {
-  flex-basis: 20%;
+  flex-basis: 50%;
 }
 .principal-nav {
   flex-basis: 80%;
@@ -309,17 +342,25 @@ h2 {
   max-width: 90rem;
   margin: 0 auto;
 }
-.techs {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
+.techs,
 .techs-2 {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 480px) {
+  .techs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .techs-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 .techs li,
 .techs-2 li {
@@ -353,7 +394,7 @@ h2 {
   gap: 2rem;
   padding-bottom: 4rem;
 }
-@media (min-width: 768px) and (min-width: 992px) {
+@media (min-width: 768px) {
   .work {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -370,12 +411,13 @@ h2 {
   left: 0;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   width: 100%;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
   transition: all 0.5s ease-in;
   background-color: rgba(66, 75, 84, 0.8);
   opacity: 0;
+  height: 100%;
 }
 .project-link a {
   font-size: 2.6rem;
@@ -438,7 +480,8 @@ footer {
   -moz-box-shadow: 0px 5px 12px -3px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 5px 12px -3px rgba(0, 0, 0, 0.75);
 }
-/* Scrollbar 
+
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
 }
