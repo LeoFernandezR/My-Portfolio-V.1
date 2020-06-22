@@ -29,7 +29,9 @@
             <nav>
               <a href="#">Linked<i class="fab fa-linkedin"></i></a>
               <a href="#"><i class="fab fa-github"></i>Github</a>
-              <a href="#"><i class="fas fa-envelope"></i>Email</a>
+              <a href="mailto:leonardo.fernandez1402@gmail.com"
+                ><i class="fas fa-envelope"></i>Email</a
+              >
             </nav>
           </div>
           <div class="hello">
@@ -49,15 +51,27 @@
             </div>
             <div class="myself">
               <img src="img/recortada.jpg" alt="leonardo-fernandez" />
-              <a href="#">Contact me</a>
+              <a href="mailto:leonardo.fernandez1402@gmail.com">Contact me</a>
             </div>
           </div>
         </div>
       </div>
     </header>
+    <div class="navigation-box">
+      <div class="navigation">
+        <div class="home">
+          <a href="#"><i class="fas fa-home"></i></a>
+        </div>
+        <nav class="principal-nav">
+          <a href="#skills">Skills</a>
+          <a href="#work">Projects</a>
+          <a href="mailto:leonardo.fernandez1402@gmail.com">Contact me</a>
+        </nav>
+      </div>
+    </div>
     <main>
       <div class="container">
-        <div id="skills">
+        <div id="skills" class="padding-box">
           <div class="subtitles-box">
             <div class="subtitles">
               <h2>Skills</h2>
@@ -126,7 +140,7 @@
             </ul>
           </div>
         </div>
-        <div id="work">
+        <div id="work" class="padding-box">
           <div class="subtitles-box">
             <div class="subtitles">
               <h2>Projects</h2>
@@ -135,6 +149,10 @@
           <div class="work">
             <div class="project">
               <img src="img/Projects/Agenda de Contactos.png" alt="" />
+              <div class="project-link">
+                <a href="#"><i class="fa fa-cloud"></i>Live Demo</a>
+                <a href="#"><i class="fa fa-code"></i>Repository</a>
+              </div>
             </div>
             <div class="project">
               <img src="img/Projects/UpTask.png" alt="" />
@@ -148,10 +166,17 @@
     </main>
     <footer>
       <nav class="social">
-        <a href="#">Github</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Mail</a>
+        <a href="#">Linked<i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i>Github</a>
+        <a href="mailto:leonardo.fernandez1402@gmail.com"
+          ><i class="fas fa-envelope"></i>Email</a
+        >
       </nav>
+      <div class="copy">
+        All the rights reserved - Leonardo Fernández 2020&copy;
+      </div>
     </footer>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
   </body>
 </html>
