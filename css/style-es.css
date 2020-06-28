@@ -185,9 +185,9 @@ h2 {
 @media (min-width: 768px) and (min-width: 992px) {
   .hello {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 10rem;
+    padding: 6rem;
   }
 }
 .presentation {
@@ -202,21 +202,28 @@ h2 {
 .presentation h1 {
   font-size: 3.2rem;
   text-align: center;
+  margin: 0;
+}
+.presentation h1 br {
+  display: none;
 }
 @media (min-width: 768px) and (min-width: 992px) {
   .presentation h1 {
     font-size: 5rem;
     text-align: start;
   }
+  .presentation h1 br {
+    display: block;
+  }
 }
 .presentation p {
-  font-size: 2rem;
+  font-size: 1.9rem;
   text-align: center;
 }
 @media (min-width: 768px) and (min-width: 992px) {
   .presentation p {
     font-size: 2.4rem;
-    text-align: start;
+    text-align: justify;
   }
 }
 .myself {
@@ -408,9 +415,8 @@ h2 {
 }
 .project-link {
   position: absolute;
-  bottom: 80px;
+  bottom: 0;
   left: 0;
-  display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
@@ -419,6 +425,14 @@ h2 {
   background-color: rgba(66, 75, 84, 0.8);
   opacity: 0;
   height: 100%;
+  display: none;
+}
+@media (min-width: 768px) {
+  .project-link {
+    display: flex;
+    bottom: 80px;
+    left: 0;
+  }
 }
 .project-link a {
   font-size: 2.6rem;
@@ -432,9 +446,11 @@ h2 {
 .project-link a:hover {
   color: var(--cosmic-latte);
 }
-.project:hover .project-link {
-  bottom: 0;
-  opacity: 1;
+@media (min-width: 768px) {
+  .project:hover .project-link {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 /** FOOTER **/
 footer {
@@ -506,4 +522,8 @@ footer {
 }
 .traduction a i {
   color: var(--verdigris);
+}
+.display-flex {
+  display: flex;
+  opacity: 1;
 }
